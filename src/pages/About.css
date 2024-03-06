@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /* Neutral Colors */
+    --Airbean-Neutral-D: #2F2926;
+    --Airbean-Neutral-W: #F9F9F9;
+
+    /* Green Colors */
+    --Airbean-LightGreen: #58BF94;
+    --Airbean-DarkGreen: #0e927cea;
+
+    /* Accent Colors */
+    --Airbean-Pink: #F3E4E1;
+    --Airbean-Orange: #E5674E;
+
+    /* Nav text */
+    --Airbean-text-nav-font-family: 'PT Serif', serif;
+    --Airbean-text-nav-font-weight: bold;
+    --Airbean-text-nav-font-size: 32px;
+
+    /* Menu text */
+    --Airbean-text-title-font-family: 'PT Serif', serif;
+    --Airbean-text-title-font-weight: bold;
+    --Airbean-text-title-font-size: 42px;
+    --Airbean-text-header-font-family: 'PT Serif', serif;
+    --Airbean-text-header-font-weight: bold;
+    --Airbean-text-header-font-size: 23px;
+
+    --Airbean-text-special-font-family: 'PT Serif', serif;
+    --Airbean-text-special-font-weight: bold;
+    --Airbean-text-special-font-size: 14px;
+    --Airbean-text-subheader-font-family: 'PT Serif', serif;
+    --Airbean-text-subheader-font-weight: bold;
+    --Airbean-text-subheader-font-size: 12px;
+}
+
+.founder-bio {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    overflow-y: auto;
+    color: var(--Airbean-Neutral-D);
+}
+
+.founder-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.founder-image {
+    width: 80px;
+    height: 80px;
+    background-image: url(../assets/VD.jpg);
+    background-size: cover;
+    background-color: var(--Airbean-Neutral-W);
+    border-radius: 50%;
+    border: 1px solid var(--Airbean-Neutral-D);
+}

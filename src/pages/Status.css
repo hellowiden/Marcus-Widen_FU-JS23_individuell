@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+.status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 520px;
+    text-align: center;
+    gap: 20px;
+}
+
+.status-order {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff9d;
+}
+
+.status-image {
+    width: 150px;
+    height: 150px;
+    background: url(../assets/drone.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.status-info,
+.status-info h4,
+.status-time,
+.bold,
+.ok {
+    font-family: 'PT Serif', serif;
+    color: #ffffff9d;
+}
+
+.status-info h4 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.status-time {
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.ok {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.innercol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /* Neutral Colors */
+    --Airbean-Neutral-D: #2F2926;
+    --Airbean-Neutral-W: #F9F9F9;
+
+    /* Green Colors */
+    --Airbean-LightGreen: #58BF94;
+    --Airbean-DarkGreen: #0e927cea;
+
+    /* Accent Colors */
+    --Airbean-Pink: #F3E4E1;
+    --Airbean-Orange: #E5674E;
+
+    /* Nav text */
+    --Airbean-text-nav-font-family: 'PT Serif', serif;
+    --Airbean-text-nav-font-weight: bold;
+    --Airbean-text-nav-font-size: 32px;
+
+    /* Menu text */
+    --Airbean-text-title-font-family: 'PT Serif', serif;
+    --Airbean-text-title-font-weight: bold;
+    --Airbean-text-title-font-size: 42px;
+    --Airbean-text-header-font-family: 'PT Serif', serif;
+    --Airbean-text-header-font-weight: bold;
+    --Airbean-text-header-font-size: 23px;
+
+    --Airbean-text-special-font-family: 'PT Serif', serif;
+    --Airbean-text-special-font-weight: bold;
+    --Airbean-text-special-font-size: 14px;
+    --Airbean-text-subheader-font-family: 'PT Serif', serif;
+    --Airbean-text-subheader-font-weight: bold;
+    --Airbean-text-subheader-font-size: 12px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: var(--Airbean-Neutral-W);
+    border-radius: 8px;
+    text-align: center;
+    min-width: 340px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: var(--Airbean-Neutral-D);
+}
+
+h2 {
+    color: var(--Airbean-Neutral-D);
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.overlay-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuitems-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-name {
+    font-size: 16px;
+    color: var(--Airbean-Neutral-D);
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 12px;
+    color: var(--Airbean-Neutral-D);
+}
+
+.totalandtax-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    font-size: 23px;
+    color: var(--Airbean-Neutral-D);
+}
+
+.tax {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    font-size: 12px;
+    color: var(--Airbean-Neutral-D);
+}
+
+.total-amount {
+    color: var(--Airbean-Neutral-D);
+}
+
+.incrementItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.incrementItem button {
+    background-color: var(--Airbean-Neutral-W);
+    color: var(--Airbean-Neutral-D);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: var(--Airbean-text-special-font-size);
+}
+
+.incrementItem span {
+    color: var(--Airbean-Neutral-D);
+    margin: 0 10px;
+}
+
+.takemymoney {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: var(--Airbean-text-header-font-family);
+    color: #fff;
+    background-color: var(--Airbean-Neutral-D);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.takemymoney:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+.loading-text {
+    color: black;
+}

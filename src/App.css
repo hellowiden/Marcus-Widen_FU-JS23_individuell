@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+
+  /* Neutral Colors */
+  --Airbean-Neutral-D: #2F2926;
+  --Airbean-Neutral-W: #F9F9F9;
+
+  /* Green Colors */
+  --Airbean-LightGreen: #58BF94;
+  --Airbean-DarkGreen: #0e927cea;
+
+  /* Accent Colors */
+  --Airbean-Pink: #F3E4E1;
+  --Airbean-Orange: #E5674E;
+
+  /* Nav text */
+  --Airbean-text-nav-font-family: 'PT Serif', serif;
+  --Airbean-text-nav-font-weight: bold;
+  --Airbean-text-nav-font-size: 32px;
+
+  /* Menu text */
+  --Airbean-text-title-font-family: 'PT Serif', serif;
+  --Airbean-text-title-font-weight: bold;
+  --Airbean-text-title-font-size: 42px;
+  --Airbean-text-header-font-family: 'PT Serif', serif;
+  --Airbean-text-header-font-weight: bold;
+  --Airbean-text-header-font-size: 23px;
+
+  --Airbean-text-special-font-family: 'PT Serif', serif;
+  --Airbean-text-special-font-weight: bold;
+  --Airbean-text-special-font-size: 14px;
+  --Airbean-text-subheader-font-family: 'PT Serif', serif;
+  --Airbean-text-subheader-font-weight: bold;
+  --Airbean-text-subheader-font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  color: var(--Airbean-Neutral-W);
+  font-family: 'PT Serif', serif;
+  height: 100vh;
+}
+
+.appcanvas {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+  align-items: start;
+  width: 380px;
+  min-height: 660px;
+  border: 1px solid #ffffff17;
+  border-radius: 6px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.scrollable-content {
+  max-height: 600px;
+  overflow-y: auto;
+}

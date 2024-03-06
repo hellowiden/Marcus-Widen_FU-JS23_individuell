@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /* Neutral Colors */
+    --Airbean-Neutral-D: #2F2926;
+    --Airbean-Neutral-W: #F9F9F9;
+
+    /* Green Colors */
+    --Airbean-LightGreen: #58BF94;
+    --Airbean-DarkGreen: #0e927cea;
+
+    /* Accent Colors */
+    --Airbean-Pink: #F3E4E1;
+    --Airbean-Orange: #E5674E;
+
+    /* Font Family */
+    --Airbean-font-family: 'PT Serif', serif;
+
+    /* Nav text */
+    --Airbean-text-nav-font-weight: bold;
+    --Airbean-text-nav-font-size: 32px;
+
+    /* Menu text */
+    --Airbean-text-title-font-weight: bold;
+    --Airbean-text-title-font-size: 42px;
+    --Airbean-text-header-font-weight: bold;
+    --Airbean-text-header-font-size: 23px;
+
+    --Airbean-text-special-font-weight: bold;
+    --Airbean-text-special-font-size: 14px;
+    --Airbean-text-subheader-font-weight: bold;
+    --Airbean-text-subheader-font-size: 12px;
+}
+
+.profile,
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--Airbean-font-family);
+}
+
+.profile {
+    text-align: center;
+    font-size: var(--Airbean-text-nav-font-size);
+    color: var(--Airbean-Neutral-W);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.profileImage {
+    width: 80px;
+    height: 80px;
+    background-image: url(../assets/Profileimg.svg);
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid var(--Airbean-Neutral-D);
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.userName {
+    color: var(--Airbean-Neutral-W);
+}
+
+.userEmail {
+    font-size: 14px;
+    color: var(--Airbean-Neutral-W);
+}
+
+/* Form styling */
+form {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    font-family: var(--Airbean-font-family);
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.c-container {
+    font-size: 16px;
+    color: #000000;
+    width: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--Airbean-Neutral-D);
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: var(--Airbean-font-family);
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--Airbean-Neutral-D);
+    color: var(--Airbean-Neutral-W);
+    cursor: pointer;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.logout-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 24px;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Airbean-Pink);
+    width: 341px;
+    height: 520px;
+    border-radius: 6px;
+}
+
+.img-logo {
+    background-image: url(../assets/logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-color: var(--Airbean-Neutral-D);
+    border-radius: 50%;
+}
+
+.gdpr-input {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.gdpr-input input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--Airbean-Neutral-D);
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.gdpr-input input[type="checkbox"]:checked {
+    background-color: var(--Airbean-LightGreen);
+    border: 1px solid var(--Airbean-DarkGreen);
+}
+
+.gdpr-input label {
+    font-size: 12px;
+    color: var(--Airbean-Neutral-D);
+}
+
+label[for="name"] {
+    display: flex;
+    text-align: left;
+    color: var(--Airbean-Neutral-D);
+    font-size: 16px;
+}
+
+label[for="email"] {
+    display: flex;
+    text-align: left;
+    color: var(--Airbean-Neutral-D);
+    font-size: 16px;
+}
+
+.form-inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /* Neutral Colors */
+    --Airbean-Neutral-D: #2F2926;
+    --Airbean-Neutral-W: #F9F9F9;
+
+    /* Green Colors */
+    --Airbean-LightGreen: #58BF94;
+    --Airbean-DarkGreen: #0e927cea;
+
+    /* Accent Colors */
+    --Airbean-Pink: #F3E4E1;
+    --Airbean-Orange: #E5674E;
+
+    /* Nav text */
+    --Airbean-text-nav-font-family: 'PT Serif', serif;
+    --Airbean-text-nav-font-weight: bold;
+    --Airbean-text-nav-font-size: 32px;
+
+    /* Menu text */
+    --Airbean-text-title-font-family: 'PT Serif', serif;
+    --Airbean-text-title-font-weight: bold;
+    --Airbean-text-title-font-size: 42px;
+    --Airbean-text-header-font-family: 'PT Serif', serif;
+    --Airbean-text-header-font-weight: bold;
+    --Airbean-text-header-font-size: 23px;
+
+    --Airbean-text-special-font-family: 'PT Serif', serif;
+    --Airbean-text-special-font-weight: bold;
+    --Airbean-text-special-font-size: 14px;
+    --Airbean-text-subheader-font-family: 'PT Serif', serif;
+    --Airbean-text-subheader-font-weight: bold;
+    --Airbean-text-subheader-font-size: 12px;
+}
+
+.landing-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--Airbean-text-header-font-size);
+    font-weight: var(--Airbean-text-title-font-weight);
+    color: var(--Airbean-Neutral-W);
+    width: 100%;
+    height: 500px;
+}
+
+.landing-content-container h3 {
+    font-size: var(--Airbean-text-header-font-size);
+    font-weight: var(--Airbean-text-title-font-weight);
+}
+
+.landing-content-container p {
+    font-size: var(--Airbean-text-special-font-size);
+    font-weight: var(--Airbean-text-title-font-weight);
+}
+
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    background: url(../assets/logo.svg) center/contain no-repeat;
+}
+
+.landingheaderV {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 168px;
+    height: 100%;
+    background-image: url('../assets/landingheaderV.png');
+    background-size: cover;
+    z-index: 20;
+    transform: rotateY(0deg);
+}
+
+.landingheaderH {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 168px;
+    height: 100%;
+    background-image: url('../assets/landingheaderH.png');
+    background-size: cover;
+    z-index: 20;
+}

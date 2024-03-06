@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /* Neutral Colors */
+    --Airbean-Neutral-D: #2F2926;
+    --Airbean-Neutral-W: #F9F9F9;
+
+    /* Green Colors */
+    --Airbean-LightGreen: #58BF94;
+    --Airbean-DarkGreen: #0e927cea;
+
+    /* Accent Colors */
+    --Airbean-Pink: #F3E4E1;
+    --Airbean-Orange: #E5674E;
+
+    /* Nav text */
+    --Airbean-text-nav-font-family: 'PT Serif', serif;
+    --Airbean-text-nav-font-weight: bold;
+    --Airbean-text-nav-font-size: 32px;
+
+    /* Menu text */
+    --Airbean-text-title-font-family: 'PT Serif', serif;
+    --Airbean-text-title-font-weight: bold;
+    --Airbean-text-title-font-size: 42px;
+    --Airbean-text-header-font-family: 'PT Serif', serif;
+    --Airbean-text-header-font-weight: bold;
+    --Airbean-text-header-font-size: 23px;
+
+    --Airbean-text-special-font-family: 'PT Serif', serif;
+    --Airbean-text-special-font-weight: bold;
+    --Airbean-text-special-font-size: 14px;
+    --Airbean-text-subheader-font-family: 'PT Serif', serif;
+    --Airbean-text-subheader-font-weight: bold;
+    --Airbean-text-subheader-font-size: 12px;
+}
+
+.cart-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--Airbean-Neutral-D);
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 9999;
+    border: 1px solid var(--Airbean-Neutral-W);
+}
+
+.cart-button:hover {
+    background-color: var(--Airbean-Neutral-D);
+}
+
+.cart-icon svg {
+    color: var(--Airbean-Neutral-W);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: var(--Airbean-Orange);
+    border-radius: 50%;
+    border: 1px solid var(--Airbean-Neutral-W);
+    font-size: 14px;
+    color: var(--Airbean-Neutral-W);
+    padding: 0.25em 0.6em;
+}
