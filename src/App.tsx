@@ -45,20 +45,19 @@ const App: React.FC = () => {
     appStore.showOverlay();
   };
 
-const handleIncrement = (itemId: string) => {
-  const newCart = cart.map(item =>
-    item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
-  );
-  setCart(newCart);
-};
+  const handleIncrement = (itemId: string) => {
+    const newCart = cart.map(item =>
+      item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    setCart(newCart);
+  };
 
-const handleDecrement = (itemId: string) => {
-  const newCart = cart.map(item =>
-    item.id === itemId ? { ...item, quantity: Math.max(0, item.quantity - 1) } : item
-  ).filter(item => item.quantity > 0);
-  setCart(newCart);
-};
-
+  const handleDecrement = (itemId: string) => {
+    const newCart = cart.map(item =>
+      item.id === itemId ? { ...item, quantity: Math.max(0, item.quantity - 1) } : item
+    ).filter(item => item.quantity > 0);
+    setCart(newCart);
+  };
 
   const emptyCart = () => {
     setCart([]);
