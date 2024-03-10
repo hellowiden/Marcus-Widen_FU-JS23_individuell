@@ -2,11 +2,12 @@ import { useNavigate } from 'react-router-dom';
 import './Status.css';
 
 function Status() {
-  const { orderNr, eta } = history.state.usr;
+  const historyState = history.state.usr || {};
+  const { orderNr, eta } = historyState;
   const navigate = useNavigate();
 
   const handleOkClick = () => {
-    navigate('/menu'); 
+    navigate('/menu');
   };
 
   return (
