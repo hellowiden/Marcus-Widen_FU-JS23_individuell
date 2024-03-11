@@ -36,7 +36,7 @@ const Profile: React.FC = () => {
 
   return (
     <>
-          <div className='landingheaderU'></div>
+    <div className='landingheaderU'></div>
     <div className="profile">
       {!user ? (
         <div className="signup-container">
