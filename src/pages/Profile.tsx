@@ -16,7 +16,7 @@ interface AuthState {
 const useAuthStore = create<AuthState>((set) => ({
   user: null,
   login: (user: User) => set({ user }),
-  logout: () => set({ user: null }),
+  logout: () => set({ user: null }), 
 }));
 
 const Profile: React.FC = () => {
