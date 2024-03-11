@@ -36,63 +36,63 @@ const Profile: React.FC = () => {
 
   return (
     <>
-    <div className='landingheaderU'></div>
-    <div className="profile">
-      {!user ? (
-        <div className="signup-container">
-          <div className="img-logo"></div>
-          <div className="c-container">
-            <h2>Välkommen till AirBean-familjen!</h2>
-            <p>Genom att skapa ett konto nedan kan du spara och se din orderhistorik.</p>
+      <div className='landingheaderU'></div>
+      <div className="profile">
+        {!user ? (
+          <div className="signup-container">
+            <div className="img-logo"></div>
+            <div className="c-container">
+              <h2>Välkommen till AirBean-familjen!</h2>
+              <p>Genom att skapa ett konto nedan kan du spara och se din orderhistorik.</p>
+            </div>
+
+            <form onSubmit={handleSubmit}>
+
+              <div className='form-inner-container'>
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+
+              <div className='form-inner-container'>
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+
+              <div className="gdpr-input">
+                <input
+                  type="checkbox"
+                  id="gdpr-checkbox"
+                  name="gdpr-checkbox"
+                  required
+                />
+                <label htmlFor="gdpr-checkbox">GDPR Ok!</label>
+              </div>
+              <button type="submit">Brew me a cup!</button>
+            </form>
           </div>
-
-          <form onSubmit={handleSubmit}>
-
-            <div className='form-inner-container'>
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-
-            <div className='form-inner-container'>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            </div>
-
-            <div className="gdpr-input">
-              <input
-                type="checkbox"
-                id="gdpr-checkbox"
-                name="gdpr-checkbox"
-                required
-              />
-              <label htmlFor="gdpr-checkbox">GDPR Ok!</label>
-            </div>
-            <button type="submit">Brew me a cup!</button>
-          </form>
-        </div>
-      ) : (
-        <>
-        <div className="profileContainer">
-          <img src="../assets/Profileimg.svg" alt="Profile Image" className="profileImage" />
-          <div className="userInfo">
-            <h4 className="userName">{user.name}</h4>
-            <p className="userEmail">{user.email}</p>
-            <button className="logout-button" onClick={logout}>Logout</button>
-          </div>
-        </div>
-        </>
-      )}
-    </div>
+        ) : (
+            <>
+              <div className="profileContainer">
+                <img src="../assets/Profileimg.svg" alt="Profile Image" className="profileImage" />
+                <div className="userInfo">
+                  <h4 className="userName">{user.name}</h4>
+                  <p className="userEmail">{user.email}</p>
+                  <button className="logout-button" onClick={logout}>Logout</button>
+                </div>
+              </div>
+            </>
+          )}
+      </div>
     </>
   );
 };
